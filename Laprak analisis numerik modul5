@@ -1,0 +1,28 @@
+# Laporan-pratikum-analisis-numerik-modul5
+# Algoritma A
+#input nilai awal yang merupakan angka yang paling besar
+x_awalA = 100000.0
+
+#input nilai selanjutnya yang merupakan angka yang paling kecil
+x_selanjutnyaA = 0.00001
+
+#melakukan perulangan angka 0.00001 sebanyak 100000 kali
+for _ in range(100000):
+  x_awalA += x_selanjutnyaA
+
+#cetak hasil
+print (f"hasil algoritma A:{x_awalA}")
+
+# Algoritma B
+#input nilai awal yang merupakan angka yang paling besar
+x_awalB = 100000.0
+
+#input nilai selanjutnnya yang merupakan angka yang paling kecil
+x_selanjutnyaB = 0.00001
+
+#jumlahkan dulu bilangan kecil (0.00001 * 100000)
+x_awalB += x_selanjutnyaB * 100000
+
+#cetak hasil
+print(f"hasil algoritma B:{x_awalB}")
+
